@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de datos NoSQL</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+        <a class="navbar-brand" href="#">Tipos de Base de Datos NoSQL</a>
+        <button class="navbar-toggler collapse" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        </button>
+      
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Documentales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clave.html">Clave Valor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="columnas.html">Columnas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Grafos.html">Grafos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-10">
+
+                <!-- Contenido -->
+                <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-12 text-center">
+                        <h1>Columnas</h1>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <h2 class="text-left">Cassandra </h2>
+                        <p class="text-left">
+                            Cassandra es una base de datos distribuida diseñada para manejar grandes cantidades de datos en un entorno altamente escalable. Se basa en el modelo de datos Bigtable de Google y fue desarrollado originalmente por Facebook. A lo largo de los años, Cassandra ha ganado popularidad debido a sus numerosas ventajas y desventajas.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-12 text-center">
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                          <h2 class="text-left">Características de Cassandra</h2>
+                          <p class="text-left">
+                            
+                          </p>
+                          <h3 class="text-left"></h3>
+                          <ul>
+                            <li>
+                                Facilidad de escalado:  Cassandra es altamente escalable permitiendo con facilidad más recursos.
+                            </li>
+                          </ul>
+
+                          <ul>
+                            <li>
+                                Tolerancia a fallos: Cassandra es tolerante a fallos, cada nodo funciona de manera independiente, si uno se cae se sigue dando servicio con el resto.
+                            </li>
+                          </ul>
+
+                          <ul>
+                            <li>
+                                Almacenamiento flexible: Se permite el almacenaje de estructuras flexibles, por ejemplo, no todos los registros deben tener el mismo número de columnas.
+                            </li>
+                          </ul>
+
+                          <ul>
+                            <li>
+                                Soporta ACID: Atomicity, Consistency, Isolation, y Durability.
+                            </li>
+                          </ul>
+
+                          <ul>
+                            <li>
+                                No tiene punto único de fallo. No tiene un único punto de fallo al trabajar con nodos independientes.
+                            </li>
+                          </ul>
+
+                          <ul>
+                            <li>
+                                La información puede ser particionada entre varios nodos.
+                            </li>
+                          </ul>
+
+                          <ul>
+                            <li>
+                                Los datos tienen un tiempo de vida, por lo que no es necesario borrar de la base de datos.
+                            </li>
+                          </ul>
+
+                    
+                          <ul>
+                            <li>
+                                Lenguaje de queries propio: Cassandra Query Languaje (CQL), se puede utilizar cqlsh por línea de comando para interactuar con la base de datos.
+                            </li>
+                          </ul>
+
+                    
+
+                          <div class="row">
+                            <div class="col-12">
+                              <h2 class="text-left">Cómo funciona </h2>
+                              <p class="text-left">
+                                está diseñada para manejar grandes cantidades de datos a través de múltiples servidores, manteniendo una alta disponibilidad y tolerancia a fallos. Cassandra utiliza una arquitectura distribuida que le permite escalar horizontalmente añadiendo más nodos al cluster. El modelo de datos de Cassandra se basa en un modelo de datos de familia de columnas, similar a un modelo de pares clave-valor pero con columnas adicionales. El modelo de datos de Cassandra es flexible y puede acomodar diferentes tipos de estructuras de datos, por lo que es ideal para manejar datos estructurados, semiestructurados y no estructurados.
+                              </p>
+
+                              <div class="row">
+                                <div class=" col-12">
+                                  <h2 class="text-left">Ventajas y Desventajas</h2><br>
+                                  <h3 class="text-left">Ventajas</h3>
+                                  <ul>
+                                    <li>
+                                        Alta disponibilidad: Cassandra proporciona alta disponibilidad mediante la replicación de datos a través de múltiples nodos en el clúster. Esto garantiza que los datos estén siempre disponibles aunque fallen algunos nodos del clúster.
+                                    </li>
+                                  </ul>
+
+                                  <ul>
+                                    <li>
+                                        Escalabilidad: Cassandra es altamente escalable y puede manejar grandes cantidades de datos añadiendo más nodos al clúster. Esto permite a las organizaciones escalar sus necesidades de gestión de datos a medida que sus datos crecen.
+                                    </li>
+                                  </ul>
+
+                                  <ul>
+                                    <li>
+                                        Tolerancia a fallos: Cassandra está diseñado para gestionar fallos y mantener la coherencia de los datos incluso si fallan algunos nodos del clúster. Cassandra utiliza un protocolo de cotilleo para detectar fallos y replica automáticamente los datos para garantizar su coherencia.
+                                    </li>
+                                  </ul>
+
+                                  <ul>
+                                    <li>
+                                        Modelo de datos flexible: El modelo de datos de Cassandra es flexible y puede acomodar diferentes tipos de estructuras de datos, incluyendo datos estructurados, semiestructurados y no estructurados.
+                                    </li>
+                                  </ul>
+                                  <ul>
+                                    <li>
+                                        Escalabilidad lineal: La escalabilidad lineal de Cassandra permite a las organizaciones escalar sus necesidades de gestión de datos añadiendo más nodos al clúster sin comprometer el rendimiento.
+                                    </li>
+                                  </ul>
+                                  <h3 class="text-left">Desventajas</h3>
+                                  <ul>
+                                    <li>
+                                        Alto costo de mantenimiento.
+                                    </li>
+                                  </ul>
+
+                                  <ul>
+                                    <li>
+                                        Rendimiento limitado.
+                                    </li>
+                                  </ul>
+
+                                  <ul>
+                                    <li>
+                                        Baja escalabilidad.
+                                    </li>
+                                  </ul>
+
+                                  <ul>
+                                    <li>
+                                        Falta de herramientas de administración.
+                                    </li>
+                                  </ul>
+
+                                  <ul>
+                                    <li>
+                                        No soporta transacciones complejas.
+                                    </li>
+                                  </ul>
+
+                            </div>
+
+
+                
+</div>
+</div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  </body>
+</html>

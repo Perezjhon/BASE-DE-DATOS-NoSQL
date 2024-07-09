@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de datos NoSQL</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+        <a class="navbar-brand" href="#">Tipos de Base de Datos NoSQL</a>
+        <button class="navbar-toggler collapse" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        </button>
+      
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Documentales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clave.html">Clave Valor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="columnas.html">Columnas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Grafos.html">Grafos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-10">
+
+                    <!-- Contenido -->
+                    <div class="container">
+                        <div class="row justify-content-center">
+                          <div class="col-12 text-center">
+                            <h1>Clave Valor</h1>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12">
+                            <h2 class="text-left">Redis </h2>
+                            <p class="text-left">
+                                Redis (siglas compuestas por las palabras REmote DIccionaryS erver o Servidor de Diccionario Remoto) (enlace externo a ibm.com) es un almacén de claves/valores NoSQL de código abierto en memoria que se utiliza principalmente como caché de aplicaciones o base de datos de respuesta rápida. Debido a que almacena datos en la memoria en lugar de en un disco o unidad de estado sólido (SSD), Redis ofrece una velocidad, confiabilidad y rendimiento incomparables.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="container">
+                        <div class="row justify-content-center">
+                          <div class="col-12 text-center">
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                              <h2 class="text-left">Características Redis</h2>
+                              <p class="text-left">
+                                Algunas Características  más importantes o destacadas de Redis incluyen:
+                              </p>
+                              <h3 class="text-left">Redis Sentinel:</h3>
+                              <ul>
+                                <li>
+                                Redis Sentinel  es un sistema distribuido independiente que ayuda a los desarrolladores a calibrar sus instancias para que estén altamente disponibles para los clientes. Sentinel utiliza una serie de procesos de supervisión, notificaciones y conmutaciones por error automáticas para informar a los usuarios cuando hay algún problema con las instancias maestras y esclavas, mientras reconfigura automáticamente nuevas conexiones para aplicaciones cuando es necesario.
+                                </li>
+                              </ul>
+
+                              <h3 class="text-left">Redis Cluster:</h3>
+                              <ul>
+                                <li>
+                                    es una implementación distribuida de Redis que divide automáticamente los conjuntos de datos entre varios nodos. Esto permite un mayor rendimiento y escalabilidad de las implementaciones de bases de datos, al mismo tiempo que garantiza operaciones continuas en caso de que los subconjuntos de nodos no puedan comunicarse con el resto del clúster.
+                                </li>
+                              </ul>
+
+                              <h3 class="text-left">Redis Pub/Sub:</h3>
+                              <ul>
+                                <li>
+                                    los usuarios pueden aplicar servicios de mensajería y chat de alto rendimiento en todas sus aplicaciones y servicios. Esto incluye la capacidad de utilizar estructuras de datos de lista para ejecutar operaciones atómicas y capacidades de bloqueo.
+                                </li>
+                              </ul>
+
+                              <h3 class="text-left">Persistencia de Redis:</h3>
+                              <ul>
+                                <li>
+                                    Redis utiliza almacenamiento en disco persistente diseñado para sobrevivir a las interrupciones del proceso y los cuellos de botella de la red.
+                                </li>
+                              </ul>
+
+                              <div class="row">
+                                <div class="col-12">
+                                  <h2 class="text-left">Cómo funciona </h2>
+                                  <p class="text-left">
+                                    Redis funciona almacenando datos en memoria. Cuando se solicitan datos, Redis los recupera de la memoria y los devuelve al usuario.  Redis está diseñado para ser extremadamente rápido y eficiente, lo que significa que puede manejar grandes cantidades de datos y realizar operaciones complejas en tiempo real.<br><br>
+
+                                    Redis utiliza un modelo monohilo, lo que significa que sólo puede procesar una orden a la vez. Sin embargo, Redis está diseñado para ser escalable, lo que significa que se puede ejecutar en varios servidores para manejar una mayor carga. Redis también soporta la replicación, lo que significa que los datos pueden ser replicados en varios servidores para aumentar la disponibilidad.
+                                  </p>
+
+                                  <div class="row">
+                                    <div class=" col-12">
+                                      <h2 class="text-left">Ventajas y Desventajas</h2><br>
+                                      <h3 class="text-left">Ventajas</h3>
+                                      <ul>
+                                        <li>
+                                            Rendimiento
+                                        </li>
+                                      </ul>
+
+                                      <ul>
+                                        <li>
+                                            Simultaneidad
+                                        </li>
+                                      </ul>
+
+                                      <h3 class="text-left">Ventajas</h3>
+                                      <ul>
+                                        <li>
+                                            Problema de coherencia de escritura doble de la caché y la base de datos
+                                        </li>
+                                      </ul>
+
+                                      <ul>
+                                        <li>
+                                            Problema de avalancha de caché  
+                                        </li>
+                                      </ul>
+
+                                      <ul>
+                                        <li>
+                                            Problema de ruptura de caché
+                                        </li>
+                                      </ul>
+
+                                      <ul>
+                                        <li>
+                                            Contención concurrente de caché
+                                        </li>
+                                      </ul>
+
+                                </div>
+
+
+                    
+</div>
+</div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  </body>
+</html>
